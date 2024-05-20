@@ -1,6 +1,21 @@
+import { useNavigate } from "react-router-dom";
 import { FLASH_IMG, LINK_IMG, REM_BG_IMG } from "../utils";
 
 const Body = () => {
+  const navigator = useNavigate();
+
+  const goToUploadPage = () => {
+    navigator("/upload");
+  };
+
+  const goToImageConverter = () => {
+    navigator("/imgconverter");
+  };
+
+  const goToDownloadPage = () => {
+    navigator("/download");
+  };
+
   return (
     <div className="bg-[#121420]">
       <div className="pt-24 flex flex-col justify-center items-center gap-8">
@@ -15,7 +30,10 @@ const Body = () => {
         <p className="text-[#f0f0f0]">
           Get a transparent background for any image
         </p>
-        <button className="text-[#000] bg-[#EFF7F6] p-2 rounded-xl w-[500px] text-xl font-bold">
+        <button
+          className="text-[#000] bg-[#EFF7F6] p-2 rounded-xl w-[500px] text-xl font-bold"
+          onClick={goToUploadPage}
+        >
           Upload Image
         </button>
         <p className="text-[#f0f0f0]">No image? try one of these</p>
@@ -30,7 +48,10 @@ const Body = () => {
           <p className="text-[#f0f0f0]">
             With Badass, you can convert your files to any format
           </p>
-          <button className="text-[#fff] bg-[#48CAE4] p-2 rounded-xl w-[500px] text-xl font-semibold">
+          <button
+            onClick={goToImageConverter}
+            className="text-[#fff] bg-[#48CAE4] p-2 rounded-xl w-[500px] text-xl font-semibold"
+          >
             Choose Files
           </button>
         </div>
@@ -50,7 +71,10 @@ const Body = () => {
         <p className="text-[#f0f0f0] ">
           Ever thought of downloading multiple images at once?
         </p>
-        <button className="text-[#000] bg-[#EFF7F6] p-2 rounded-xl w-[400px] text-xl font-bold">
+        <button
+          onClick={goToDownloadPage}
+          className="text-[#000] bg-[#EFF7F6] p-2 rounded-xl w-[400px] text-xl font-bold"
+        >
           Choose Files
         </button>
       </div>

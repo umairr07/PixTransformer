@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div>
       <div className="flex gap-5 bg-[#48CAE4] justify-start items-center p-4 fixed w-full cursor-pointer">
-        <h1 className="text-2xl font-bold">Badass</h1>
+        <Link to="/" className="text-2xl font-bold">
+          PixTransformer
+        </Link>
         <ul className="flex gap-5 cursor-pointer">
-          <li>Convert</li>
-          <li>Download</li>
-          <li>Remove Bg</li>
+          <Link to="/imgconverter">Convert</Link>
+          <Link to="/download">Download</Link>
+          <Link to="/upload">Remove Bg</Link>
         </ul>
       </div>
     </div>
