@@ -1,5 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import { FLASH_IMG, LINK_IMG, REM_BG_IMG } from "../utils";
+import {
+  BOY_IMG,
+  CAR_IMG,
+  CAT_IMG,
+  DOG_IMG,
+  FLASH_IMG,
+  LINK_IMG,
+  REM_BG_IMG,
+} from "../utils";
 
 const Body = () => {
   const navigator = useNavigate();
@@ -37,6 +45,28 @@ const Body = () => {
           Upload Image
         </button>
         <p className="text-[#f0f0f0]">No image? try one of these</p>
+        <div className="flex gap-5">
+          <img
+            src={CAT_IMG}
+            alt=""
+            className="w-[50px] h-[40px] object-cover rounded-lg"
+          />
+          <img
+            src={DOG_IMG}
+            alt=""
+            className="w-[50px] h-[40px] object-cover rounded-lg"
+          />
+          <img
+            src={BOY_IMG}
+            alt=""
+            className="w-[50px] h-[40px] object-cover rounded-lg"
+          />
+          <img
+            src={CAR_IMG}
+            alt=""
+            className="w-[50px] h-[40px] object-cover rounded-lg"
+          />
+        </div>
       </div>
 
       <div className="pt-10 flex flex-col justify-center items-center gap-5">
@@ -46,11 +76,11 @@ const Body = () => {
             <span className="text-[#48CAE4]">Convert </span>Your Images | Files
           </h1>
           <p className="text-[#f0f0f0]">
-            With Badass, you can convert your files to any format
+            With Pix Transformer, you can convert your files to any format
           </p>
           <button
             onClick={goToImageConverter}
-            className="text-[#fff] bg-[#48CAE4] p-2 rounded-xl w-[500px] text-xl font-semibold"
+            className="text-[#000] bg-[#48CAE4] p-2 rounded-xl w-[500px] text-xl font-semibold"
           >
             Choose Files
           </button>
