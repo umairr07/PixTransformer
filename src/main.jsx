@@ -7,6 +7,9 @@ import Body from "./components/BodyComponent.jsx";
 import UploadImage from "./components/UploadImage.jsx";
 import ImageConverter from "./components/ImageConverter.jsx";
 import Download from "./components/Download.jsx";
+import WEBPImage from "./components/WEBImage.jsx";
+import PNGImage from "./components/PNGImage.jsx";
+import JPEGImage from "./components/JPEGImage.jsx";
 
 function App() {
   return (
@@ -35,9 +38,22 @@ const router = createBrowserRouter([
         path: "/upload",
         element: <UploadImage />,
       },
+
       {
         path: "/imgconverter",
         element: <ImageConverter />,
+      },
+      {
+        path: "WEBPImage",
+        element: <WEBPImage />,
+      },
+      {
+        path: "PNGImage",
+        element: <PNGImage />,
+      },
+      {
+        path: "JPEGImage",
+        element: <JPEGImage />,
       },
       {
         path: "/download",

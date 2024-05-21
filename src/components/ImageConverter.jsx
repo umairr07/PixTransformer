@@ -1,20 +1,38 @@
-const ImageConverter = () => {
+import { useNavigate } from "react-router-dom";
+
+function ImageConverter() {
+  const navigate = useNavigate();
+
   return (
-    <div className="pt-24 bg-[#121420] h-[85vh]">
-      <div className="ml-3">
-        <h1 className="text-3xl font-bold text-[#fff]">Image Converter</h1>
-        <h1 className=" font-medium text-[#979797] py-5">
-          Convert your images files to any format
-        </h1>
+    <div className="py-[206px] bg-[#121420]">
+      <div className="flex flex-col justify-center gap-5 items-center text-[#fff]">
+        <h1 className="text-4xl font-bold">Image Converter</h1>
+        <p className="text-xl">
+          Convert your image files by clicking on any of the below format..
+        </p>
       </div>
-      <div className="bg-[#48CAE4] w-[400px] p-2 rounded-3xl m-auto">
-        <label className="text-center ml-36 font-medium cursor-pointer">
-          <input type="file" hidden multiple />
-          Choose Image
-        </label>
+      <div className="flex gap-10 text-[#000] font-semibold justify-center py-10">
+        <button
+          className="p-2 rounded-lg bg-[#48CAE4] hover:bg-[#121420] hover:text-[#fff] hover:border-2"
+          onClick={() => navigate("/WEBPImage")}
+        >
+          WEBP File
+        </button>
+        <button
+          className="p-2 rounded-lg bg-[#48CAE4] hover:bg-[#121420] hover:text-[#fff] hover:border-2"
+          onClick={() => navigate("/PNGImage")}
+        >
+          PNG File
+        </button>
+        <button
+          className="p-2 rounded-lg bg-[#48CAE4] hover:bg-[#121420] hover:text-[#fff] hover:border-2"
+          onClick={() => navigate("/JPEGImage")}
+        >
+          JPEG File
+        </button>
       </div>
     </div>
   );
-};
+}
 
 export default ImageConverter;

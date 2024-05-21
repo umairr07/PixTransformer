@@ -39,7 +39,7 @@ const Download = () => {
   };
 
   return (
-    <div className="pt-24 bg-[#121420] ">
+    <div className="pt-24 bg-[#121420] pb-[360px]">
       <div className="ml-3">
         <h1 className="text-3xl font-bold text-[#fff]">
           Bulk Image Downloader

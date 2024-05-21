@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "axios": "^1.7.0",
+    "browser-image-compression": "^2.0.2",
     "file-saver": "^2.0.5",
+    "filepix": "^1.0.9",
+    "image-conversion": "^2.1.1",
     "image-downloader": "^4.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
+    "react-image-webp": "^0.8.0",
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {

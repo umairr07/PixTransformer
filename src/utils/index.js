@@ -2,4 +2,4 @@ export let REM_BG_IMG = "https://badass-app.vercel.app/static/media/hero-img-2.a
 
 export let LINK_IMG = "https://badass-app.vercel.app/static/media/chain.e33754ea5500ca9abefd.png"
 
-export let FLASH_IMG = "https://png.pngtree.com/png-clipart/20230819/original/pngtree-lightning-bolt-icon-isometric-vector-picture-image_8067702.png"
+export let FLASH_IMG = "blob:http://localhost:5173/476bbc36-09b5-44f9-826c-2cbc25872059"
