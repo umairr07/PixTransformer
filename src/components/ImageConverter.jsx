@@ -13,22 +13,22 @@ function ImageConverter() {
       </div>
       <div className="flex gap-10 text-[#000] font-semibold justify-center py-10">
         <button
-          className="p-2 rounded-lg bg-[#48CAE4] hover:bg-[#121420] hover:text-[#fff] hover:border-2"
+          className="p-2 rounded-lg bg-[#48CAE4] hover:bg-[#121420] hover:text-[#fff] hover:border-2 w-[150px]"
           onClick={() => navigate("/WEBPImage")}
         >
-          WEBP File
+          WEBP
         </button>
         <button
-          className="p-2 rounded-lg bg-[#48CAE4] hover:bg-[#121420] hover:text-[#fff] hover:border-2"
+          className="p-2 rounded-lg bg-[#48CAE4] hover:bg-[#121420] hover:text-[#fff] hover:border-2 w-[150px]"
           onClick={() => navigate("/PNGImage")}
         >
-          PNG File
+          PNG
         </button>
         <button
-          className="p-2 rounded-lg bg-[#48CAE4] hover:bg-[#121420] hover:text-[#fff] hover:border-2"
+          className="p-2 rounded-lg bg-[#48CAE4] hover:bg-[#121420] hover:text-[#fff] hover:border-2 w-[150px]"
           onClick={() => navigate("/JPEGImage")}
         >
-          JPEG File
+          JPEG
         </button>
       </div>
     </div>

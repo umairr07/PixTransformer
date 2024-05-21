@@ -1,14 +1,19 @@
 import axios from "axios";
 import { useState } from "react";
 import { saveAs } from "file-saver";
+import { ToastContainer, toast } from "react-toastify";
 
 const UploadImage = () => {
   const [inputImage, setInputImage] = useState(null);
   const [outputImage, setOutputImage] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const removeBackground = async () => {
     console.log(inputImage);
     console.log("clicked");
+
+    if (!inputImage) return;
+    setIsLoading(true);
 
     const formData = new FormData();
     formData.append("image_file", inputImage);
