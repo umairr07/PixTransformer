@@ -19,7 +19,7 @@ const UploadImage = () => {
     formData.append("image_file", inputImage);
     formData.append("size", "auto");
 
-    const api_key = "VB4g5EFzeZuFkVRLPJYRppJU";
+    const api_key = "s3Nv7pKMT5GxgZGkqQvLN8e2";
     const url = "https://api.remove.bg/v1.0/removebg";
 
     axios({
